@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sulav · Young Developer & Gamer from Nepal</title>
+  <meta name="description" content="Portfolio of Sulav — a 15+ year old developer from Nepal building web apps, scrapers, games and creative tech projects." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ============== NAVBAR ============== -->
+  <header id="navbar" class="navbar">
+    <nav class="nav-inner">
+      <a href="#home" class="brand">
+        <span class="brand-logo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </span>
+        <span class="brand-text"><span class="gradient-text">Sulav</span></span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active" data-target="home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-target="about">About</a></li>
+        <li><a href="#skills" class="nav-link" data-target="skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-target="projects">Projects</a></li>
+        <li><a href="#contact" class="nav-link" data-target="contact">Contact</a></li>
+      </ul>
+
+      <a href="#contact" class="hire-btn">Hire Me</a>
+
+      <button id="menuBtn" class="menu-btn" aria-label="Toggle menu">
+        <svg id="menuIconOpen" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <svg id="menuIconClose" style="display:none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </nav>
+
+    <div id="mobileMenu" class="mobile-menu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact" class="mobile-hire">Hire Me</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============== HERO ============== -->
+    <section id="home" class="hero grid-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+
+      <div class="hero-grid">
+        <div class="hero-text">
+          <div class="reveal pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 4.6L19 9l-4.6 1.9L12 16l-1.9-5.1L5 9l5.1-1.4L12 3z"/></svg>
+            <span>Available for projects · Based in Nepal 🇳🇵</span>
+          </div>
+
+          <h1 class="reveal hero-title" style="--delay:.1s">
+            Hi, I'm <span class="gradient-text animate-gradient">Sulav</span><br />
+            a young
+            <span class="underline-wrap">
+              <span class="gradient-text">Developer</span>
+              <svg class="underline-svg" viewBox="0 0 300 14" fill="none">
+                <path class="underline-path" d="M2 9 Q 75 2, 150 7 T 298 6" stroke="url(#g1)" stroke-width="3" stroke-linecap="round"/>
+                <defs><linearGradient id="g1" x1="0" x2="1"><stop offset="0%" stop-color="oklch(0.85 0.2 200)"/><stop offset="100%" stop-color="oklch(0.65 0.27 305)"/></linearGradient></defs>
+              </svg>
+            </span>
+            & Gamer
+          </h1>
+
+          <p class="reveal hero-desc" style="--delay:.3s">
+            SEE-completed student passionate about coding, web scraping and creative tech projects. Building real-world things, breaking limits, leveling up every day.
+          </p>
+
+          <div class="reveal hero-actions" style="--delay:.45s">
+            <a href="#projects" class="btn-primary animate-pulse-glow">
+              View Projects
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+            </a>
+            <a href="#contact" class="btn-glass">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Contact
+            </a>
+          </div>
+
+          <div class="reveal social-row" style="--delay:.6s">
+            <a href="https://github.com/TMGsulav" aria-label="GitHub" class="social-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3C5.4.3 0 5.7 0 12.4c0 5.3 3.4 9.8 8.2 11.4.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.8.1-.8.1-.8 1.2.1 1.9 1.3 1.9 1.3 1.1 1.9 2.9 1.4 3.6 1 .1-.8.4-1.4.8-1.7-2.7-.3-5.5-1.3-5.5-6 0-1.3.5-2.4 1.3-3.2-.1-.3-.6-1.6.1-3.3 0 0 1-.3 3.3 1.2 1-.3 2-.4 3-.4s2 .1 3 .4c2.3-1.6 3.3-1.2 3.3-1.2.7 1.7.2 3 .1 3.3.8.9 1.3 2 1.3 3.2 0 4.7-2.8 5.7-5.5 6 .4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6C20.6 22.2 24 17.7 24 12.4 24 5.7 18.6.3 12 .3z"/></svg></a>
+            <a href="#" aria-label="YouTube" class="social-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.6 15.6V8.4L15.8 12l-6.2 3.6z"/></svg></a>
+            <a href="mailto:narutotmg54@gmail.com" aria-label="Email" class="social-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+          </div>
+        </div>
+
+        <div class="reveal-x code-window-wrap" style="--delay:.4s">
+          <div class="code-glow"></div>
+          <div class="code-window glass-strong gradient-border animate-float">
+            <div class="code-header">
+              <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+              <span class="code-filename">sulav.tsx</span>
+            </div>
+<pre class="code-body"><code><span class="t-purple">const</span> <span class="t-cyan">sulav</span> <span class="t-mute">=</span> <span class="t-fg">{</span>
+  <span class="t-pink">name</span>: <span class="t-green">'Sulav'</span>,
+  <span class="t-pink">age</span>: <span class="t-orange">15</span>,
+  <span class="t-pink">location</span>: <span class="t-green">'Nepal 🇳🇵'</span>,
+  <span class="t-pink">stack</span>: [
+    <span class="t-green">'HTML'</span>, <span class="t-green">'CSS'</span>, <span class="t-green">'JS'</span>,
+    <span class="t-green">'Python'</span>, <span class="t-green">'C'</span>, <span class="t-green">'Apify'</span>
+  ],
+  <span class="t-pink">loves</span>: [<span class="t-green">'coding'</span>, <span class="t-green">'gaming'</span>],
+  <span class="t-pink">goal</span>: <span class="t-green">'full-stack dev 🚀'</span>,
+<span class="t-fg">}</span>;</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-indicator">
+        Scroll
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+      </a>
+    </section>
+
+    <!-- ============== ABOUT ============== -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head reveal-on-scroll">
+          <span class="section-eyebrow"> ABOUT</span>
+          <h2 class="section-title">Coder, <span class="gradient-text">Gamer and</span> Creator</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal-on-scroll">
+            <p>I'm <strong>Sulav</strong>, a recently SEE-completed student from Nepal with a strong passion for coding, web development, gaming and creative tech projects.</p>
+            <p>I love building real-world projects, experimenting with new ideas and continuously sharpening my skills. From scraping data with Apify to crafting anime-themed websites and Python mini-games, I treat every project like a new level to clear.</p>
+            <p>My goal? Become a <span class="gradient-text"><strong>full-stack developer</strong></span>, build unique web apps, and grow a YouTube channel that actually slaps.</p>
+
+            <div class="interests-grid">
+              <div class="interest-card glass"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="11" x2="10" y2="11"/><line x1="8" y1="9" x2="8" y2="13"/><line x1="15" y1="12" x2="15.01" y2="12"/><line x1="18" y1="10" x2="18.01" y2="10"/><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258A4 4 0 0 0 17.32 5z"/></svg><div>Gaming</div></div>
+              <div class="interest-card glass"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg><div>YouTube</div></div>
+              <div class="interest-card glass"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg><div>Tech</div></div>
+              <div class="interest-card glass"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg><div>Adventure</div></div>
+            </div>
+          </div>
+
+          <div class="stats-grid reveal-on-scroll">
+            <div class="stat-card glass-strong gradient-border offset"><div class="stat-num gradient-text">15+</div><div class="stat-label">Age</div></div>
+            <div class="stat-card glass-strong gradient-border"><div class="stat-num gradient-text">10+</div><div class="stat-label">Projects</div></div>
+            <div class="stat-card glass-strong gradient-border offset"><div class="stat-num gradient-text">6+</div><div class="stat-label">Tech</div></div>
+            <div class="stat-card glass-strong gradient-border"><div class="stat-num gradient-text">∞</div><div class="stat-label">Curiosity</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== SKILLS ============== -->
+    <section id="skills" class="section">
+      <div class="skills-glow"></div>
+      <div class="container">
+        <div class="section-head reveal-on-scroll">
+          <span class="section-eyebrow"> SKILLS</span>
+          <h2 class="section-title">My <span class="gradient-text">Tech Stack</span></h2>
+          <p class="section-sub">Tools I use to build, break, and debug stuff every day.</p>
+        </div>
+
+        <div class="skills-grid" id="skillsGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============== PROJECTS ============== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head reveal-on-scroll">
+          <span class="section-eyebrow"> PROJECTS</span>
+          <h2 class="section-title">Featured <span class="gradient-text">Builds</span></h2>
+          <p class="section-sub">Stuff I've coded, broken, fixed, and shipped.</p>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============== CONTACT ============== -->
+    <section id="contact" class="section">
+      <div class="container narrow">
+        <div class="section-head reveal-on-scroll">
+          <span class="section-eyebrow"> CONTACT</span>
+          <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+          <p class="section-sub">Got a project, idea, or just wanna chat about games? Drop a message.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal-on-scroll">
+            <a href="mailto:narutotmg54@gmail.com" class="contact-card glass">
+              <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+              <div><div class="contact-label">Email</div><div class="contact-value">My email</div></div>
+            </a>
+            <a href="https://github.com/TMGsulav" class="contact-card glass">
+              <div class="contact-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3C5.4.3 0 5.7 0 12.4c0 5.3 3.4 9.8 8.2 11.4.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.8.1-.8.1-.8 1.2.1 1.9 1.3 1.9 1.3 1.1 1.9 2.9 1.4 3.6 1 .1-.8.4-1.4.8-1.7-2.7-.3-5.5-1.3-5.5-6 0-1.3.5-2.4 1.3-3.2-.1-.3-.6-1.6.1-3.3 0 0 1-.3 3.3 1.2 1-.3 2-.4 3-.4s2 .1 3 .4c2.3-1.6 3.3-1.2 3.3-1.2.7 1.7.2 3 .1 3.3.8.9 1.3 2 1.3 3.2 0 4.7-2.8 5.7-5.5 6 .4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6C20.6 22.2 24 17.7 24 12.4 24 5.7 18.6.3 12 .3z"/></svg></div>
+              <div><div class="contact-label">GitHub</div><div class="contact-value">TMGsulav</div></div>
+            </a>
+            <a href="https://youtube.com" class="contact-card glass">
+              <div class="contact-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.6 15.6V8.4L15.8 12l-6.2 3.6z"/></svg></div>
+              <div><div class="contact-label">YouTube</div><div class="contact-value">Processing</div></div>
+            </a>
+            <div class="contact-card glass">
+              <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+              <div><div class="contact-label">Location</div><div class="contact-value">Nepal 🇳🇵</div></div>
+            </div>
+          </div>
+
+          <form id="contactForm" class="contact-form glass-strong gradient-border reveal-on-scroll">
+            <div class="form-row">
+              <div class="form-field">
+                <label>Name</label>
+                <input type="text" required placeholder="Your name" />
+              </div>
+              <div class="form-field">
+                <label>Email</label>
+                <input type="email" required placeholder="you@example.com" />
+              </div>
+            </div>
+            <div class="form-field">
+              <label>Subject</label>
+              <input type="text" placeholder="What's this about?" />
+            </div>
+            <div class="form-field">
+              <label>Message</label>
+              <textarea rows="5" required placeholder="Tell me about your idea..."></textarea>
+            </div>
+            <button type="submit" id="submitBtn" class="btn-primary submit-btn animate-pulse-glow">
+              <span id="btnText">Send Message</span>
+              <svg id="btnIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-text">
+        © <span id="year"></span> <span class="gradient-text"><strong>Sulav Tamang</strong></span> · Built with
+        <svg class="heart" viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        in Nepal
+      </div>
+      <div class="footer-socials">
+        <a href="https://github.com/TMGsulav" class="social-btn small"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3C5.4.3 0 5.7 0 12.4c0 5.3 3.4 9.8 8.2 11.4.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.8.1-.8.1-.8 1.2.1 1.9 1.3 1.9 1.3 1.1 1.9 2.9 1.4 3.6 1 .1-.8.4-1.4.8-1.7-2.7-.3-5.5-1.3-5.5-6 0-1.3.5-2.4 1.3-3.2-.1-.3-.6-1.6.1-3.3 0 0 1-.3 3.3 1.2 1-.3 2-.4 3-.4s2 .1 3 .4c2.3-1.6 3.3-1.2 3.3-1.2.7 1.7.2 3 .1 3.3.8.9 1.3 2 1.3 3.2 0 4.7-2.8 5.7-5.5 6 .4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6C20.6 22.2 24 17.7 24 12.4 24 5.7 18.6.3 12 .3z"/></svg></a>
+        <a href="https://youtube.com" class="social-btn small"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.6 15.6V8.4L15.8 12l-6.2 3.6z"/></svg></a>
+        <a href="mailto:narutotmg54@gmail.com" class="social-btn small"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
