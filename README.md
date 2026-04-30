@@ -35,4 +35,4 @@ then open http://localhost:8000
 
 Works smoothly on mobile, tablet and desktop.
 
-Built with 💙 in Nepal.
+Built by Sulav Tamang in Nepal.
