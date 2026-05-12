@@ -1,38 +1,57 @@
-# Sulav · Portfolio (Static HTML Version)
+# 🌐 Personal Portfolio Website
 
-A modern, dark, mobile-responsive portfolio with neon glow, glassmorphism and smooth animations — written in plain **HTML, CSS and JavaScript** (no build step, no frameworks).
+A modern and interactive personal portfolio website built using **HTML, CSS, and JavaScript**.  
+This portfolio showcases multiple creative and technical projects with a clean UI, animations, and custom-designed project sections.
 
-## 📁 Files
+---
 
-- `index.html` — markup & content
-- `styles.css` — design system, animations, responsive layout
-- `script.js` — navbar, mobile menu, reveal-on-scroll, skill bars, contact form
+# ✨ Features
 
-## 🚀 How to use
+- Responsive Design 📱
+- Smooth Animations 🎨
+- Modern UI/UX
+- Interactive Project Cards
+- Custom Project Images
+- Clean Navigation System
+- Fast and Lightweight
 
-Just open `index.html` in any browser. No installation needed.
+---
 
-For best results, run a tiny local server:
-```
-python -m http.server 8000
-```
-then open http://localhost:8000
+# 🛠️ Technologies Used
 
-## ✨ Animations included
+- HTML5
+- CSS3
+- JavaScript
+- Font Awesome
+- Responsive Flexbox/Grid Layouts
 
-- Animated gradient text
-- Floating code window
-- Pulsing neon glow on buttons
-- Floating background blobs
-- Underline draw-in SVG
-- Fade-up reveal on scroll (IntersectionObserver)
-- Animated skill progress bars
-- Hover lift on cards
-- Smooth scroll between sections
-- Mobile menu slide-in
+---
 
-## 📱 Responsive
+# 📂 Projects Included
 
-Works smoothly on mobile, tablet and desktop.
+## 🕷️ Web Scraping Suite
+A collection of web scraping tools and automation utilities made using Python.
 
-Built by Sulav Tamang in Nepal.
+## 🚗 Car Booking Website
+A stylish car booking and rental themed website interface.
+
+## 🎌 Anime Themed Website
+Anime-inspired UI design with dark neon aesthetics and animated sections.
+
+## ⛏️ Minecraft Subpage
+A Minecraft styled webpage inspired by the game's visual design.
+
+## 🧠 Quiz Game
+Interactive quiz game with multiple-choice questions and scoring logic.
+
+## 🐍 Python Mini Projects
+A collection of beginner-to-intermediate Python projects and utilities.
+
+---
+
+# 🚀 Getting Started
+
+## Clone the Repository
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
