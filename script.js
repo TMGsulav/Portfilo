@@ -86,12 +86,12 @@ skillsGrid.innerHTML = skills
 
 // ===== Projects data =====
 const projects = [
-  { title: "Web Scraping Suite", desc: "A collection of scrapers for Bluemercury, Macy's, NARS Cosmetics & more. Built using Apify, XPath and clean data extraction pipelines.", tags: ["Apify", "Python", "XPath"], gradient: "linear-gradient(135deg, oklch(0.85 0.2 200), oklch(0.65 0.27 305))", emoji: "🕷️" },
-  { title: "Car Booking Website", desc: "Multi-page web app with index, about and login flows. Clean responsive UI with form validation.", tags: ["HTML", "CSS", "JavaScript"], gradient: "linear-gradient(135deg, oklch(0.65 0.27 305), oklch(0.72 0.25 350))", emoji: "🚗" },
-  { title: "Anime Themed Website", desc: "Modern UI with bold visuals, glass effects and smooth scrolling — built around an anime aesthetic.", tags: ["HTML", "CSS", "Animation"], gradient: "linear-gradient(135deg, oklch(0.72 0.25 350), oklch(0.85 0.2 200))", emoji: "⛩️" },
-  { title: "Minecraft Subpage", desc: "Themed landing subpage inspired by Minecraft — pixel vibes meets modern layout.", tags: ["HTML", "CSS"], gradient: "linear-gradient(135deg, oklch(0.85 0.2 200), oklch(0.78 0.2 145))", emoji: "⛏️" },
-  { title: "Quiz Game", desc: "Interactive quiz game with multiple difficulty levels, dynamic scoring and replay system.", tags: ["JavaScript", "Logic"], gradient: "linear-gradient(135deg, oklch(0.85 0.18 70), oklch(0.72 0.25 350))", emoji: "🎮" },
-  { title: "Python Mini Projects", desc: "A growing pile of bite-sized Python experiments — automation, games and tiny tools.", tags: ["Python", "CLI"], gradient: "linear-gradient(135deg, oklch(0.65 0.27 305), oklch(0.7 0.2 240))", emoji: "🐍" },
+  { title: "Web Scraping Suite", image: "assets/scraper_ai.png", desc: "A collection of scrapers for Bluemercury, Macy's, NARS Cosmetics & more. Built using Apify, XPath and clean data extraction pipelines.", tags: ["Apify", "Python", "XPath"], gradient: "linear-gradient(135deg, oklch(0.85 0.2 200), oklch(0.65 0.27 305))", emoji: "🕷️" },
+  { title: "Car Booking Website", image: "assets/car_booking_ai.png", desc: "Multi-page web app with index, about and login flows. Clean responsive UI with form validation.", tags: ["HTML", "CSS", "JavaScript"], gradient: "linear-gradient(135deg, oklch(0.65 0.27 305), oklch(0.72 0.25 350))", emoji: "🚗" },
+  { title: "Anime Themed Website", image: "assets/anime_ai.png", desc: "Modern UI with bold visuals, glass effects and smooth scrolling — built around an anime aesthetic.", tags: ["HTML", "CSS", "Animation"], gradient: "linear-gradient(135deg, oklch(0.72 0.25 350), oklch(0.85 0.2 200))", emoji: "⛩️" },
+  { title: "Minecraft Subpage", image: "assets/minecraft_ai.png", desc: "Themed landing subpage inspired by Minecraft — pixel vibes meets modern layout.", tags: ["HTML", "CSS"], gradient: "linear-gradient(135deg, oklch(0.85 0.2 200), oklch(0.78 0.2 145))", emoji: "⛏️" },
+  { title: "Quiz Game", image: "assets/quiz_ai.png", desc: "Interactive quiz game with multiple difficulty levels, dynamic scoring and replay system.", tags: ["JavaScript", "Logic"], gradient: "linear-gradient(135deg, oklch(0.85 0.18 70), oklch(0.72 0.25 350))", emoji: "🎮" },
+  { title: "Python Mini Projects", image: "assets/python_ai.png", desc: "A growing pile of bite-sized Python experiments — automation, games and tiny tools.", tags: ["Python", "CLI"], gradient: "linear-gradient(135deg, oklch(0.65 0.27 305), oklch(0.7 0.2 240))", emoji: "🐍" },
 ];
 
 const projectsGrid = document.getElementById("projectsGrid");
@@ -100,6 +100,7 @@ projectsGrid.innerHTML = projects
     (p, i) => `
   <article class="project-card reveal-on-scroll" style="transition-delay:${i * 70}ms">
     <div class="project-header" style="background:${p.gradient}">
+      <img src="${p.image}" alt="${p.title}" class="project-image" />
       <span class="project-emoji">${p.emoji}</span>
       <span class="project-badge">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 4.6L19 9l-4.6 1.9L12 16l-1.9-5.1L5 9l5.1-1.4L12 3z"/></svg>
