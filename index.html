@@ -24,6 +24,7 @@
       <ul class="nav-links">
         <li><a href="#home" data-target="home" class="active">Home</a></li>
         <li><a href="#about" data-target="about">About</a></li>
+        <li><a href="#services" data-target="services">Services</a></li>
         <li><a href="#work" data-target="work">Work</a></li>
         <li><a href="#projects" data-target="projects">Projects</a></li>
         <li><a href="#contact" data-target="contact">Contact</a></li>
@@ -36,6 +37,7 @@
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
         <li><a href="#work">Work</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -53,7 +55,7 @@
             <span class="hero-name">Sulav Tamang</span>
           </h1>
           <p class="hero-desc">
-            A developer who builds web applications, scraping pipelines, and interactive experiences. I turn ideas into working software — one messy commit at a time.
+            A developer who builds web applications, AI experiments, and interactive experiences. I turn ideas into working software — one messy commit at a time.
           </p>
           <div class="hero-actions">
             <a href="#projects" class="btn">View Work</a>
@@ -72,15 +74,114 @@
         </div>
 
         <div class="hero-visual">
-          <div class="hero-code">
-            <div class="hero-code-line"><span class="hl-k">const</span> <span class="hl-v">dev</span> = {</div>
-            <div class="hero-code-line indent"><span class="hl-k">name</span>: <span class="hl-s">"Sulav Tamang"</span>,</div>
-            <div class="hero-code-line indent"><span class="hl-k">from</span>: <span class="hl-s">"Pokhara, Nepal"</span>,</div>
-            <div class="hero-code-line indent"><span class="hl-k">stack</span>: [<span class="hl-s">"html"</span>, <span class="hl-s">"css"</span>, <span class="hl-s">"js"</span>, <span class="hl-s">"python"</span>],</div>
-            <div class="hero-code-line indent"><span class="hl-k">tools</span>: [<span class="hl-s">"apify"</span>, <span class="hl-s">"node"</span>, <span class="hl-s">"git"</span>],</div>
-            <div class="hero-code-line indent"><span class="hl-k">projects</span>: <span class="hl-v">10</span>,</div>
-            <div class="hero-code-line indent"><span class="hl-k">status</span>: <span class="hl-s">"building"</span></div>
-            <div class="hero-code-line">}</div>
+          <div class="hero-ill">
+            <svg viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg" class="hero-ill-svg">
+              <defs>
+                <linearGradient id="ill-bg" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="var(--accent)" stop-opacity="0.06" />
+                  <stop offset="100%" stop-color="var(--accent)" stop-opacity="0.01" />
+                </linearGradient>
+                <linearGradient id="ill-glow" x1="0.5" y1="0" x2="0.5" y2="1">
+                  <stop offset="0%" stop-color="var(--accent)" stop-opacity="0.15" />
+                  <stop offset="100%" stop-color="var(--accent)" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+
+              <rect width="500" height="400" rx="16" fill="url(#ill-bg)" stroke="var(--border)" stroke-width="0.5" />
+
+              <!-- Glow orbs -->
+              <circle cx="250" cy="200" r="140" fill="url(#ill-glow)" class="ill-glow-pulse" />
+              <circle cx="100" cy="100" r="6" fill="var(--accent)" opacity="0.15" class="ill-particle" />
+              <circle cx="400" cy="80" r="4" fill="var(--accent)" opacity="0.12" class="ill-particle" style="animation-delay:1s" />
+              <circle cx="420" cy="320" r="5" fill="var(--accent)" opacity="0.1" class="ill-particle" style="animation-delay:2s" />
+              <circle cx="80" cy="300" r="3" fill="var(--accent)" opacity="0.15" class="ill-particle" style="animation-delay:0.5s" />
+
+              <!-- Neural network nodes & connections -->
+              <g opacity="0.25">
+                <line x1="80" y1="100" x2="200" y2="160" stroke="var(--accent)" stroke-width="0.5" />
+                <line x1="200" y1="160" x2="300" y2="120" stroke="var(--accent)" stroke-width="0.5" />
+                <line x1="300" y1="120" x2="420" y2="180" stroke="var(--accent)" stroke-width="0.5" />
+                <line x1="200" y1="160" x2="250" y2="280" stroke="var(--accent)" stroke-width="0.5" />
+                <line x1="250" y1="280" x2="400" y2="300" stroke="var(--accent)" stroke-width="0.5" />
+                <line x1="80" y1="100" x2="420" y2="180" stroke="var(--accent)" stroke-width="0.3" opacity="0.5" />
+              </g>
+
+              <circle cx="80" cy="100" r="3" fill="var(--accent)" class="ill-node" />
+              <circle cx="200" cy="160" r="3" fill="var(--accent)" class="ill-node" style="animation-delay:0.3s" />
+              <circle cx="300" cy="120" r="2.5" fill="var(--accent)" class="ill-node" style="animation-delay:0.6s" />
+              <circle cx="420" cy="180" r="3" fill="var(--accent)" class="ill-node" style="animation-delay:0.9s" />
+              <circle cx="250" cy="280" r="2.5" fill="var(--accent)" class="ill-node" style="animation-delay:1.2s" />
+              <circle cx="400" cy="300" r="2" fill="var(--accent)" class="ill-node" style="animation-delay:1.5s" />
+
+              <!-- Main code editor window -->
+              <rect x="100" y="90" width="300" height="210" rx="8" fill="var(--surface)" stroke="var(--border)" stroke-width="1" class="ill-window-main" />
+              <rect x="100" y="90" width="300" height="32" rx="8" fill="var(--bg-alt)" stroke="var(--border)" stroke-width="1" />
+              <rect x="100" y="106" width="300" height="16" fill="var(--bg-alt)" />
+              <circle cx="120" cy="106" r="5" fill="#e85d3a" opacity="0.8" />
+              <circle cx="138" cy="106" r="5" fill="#f0c040" opacity="0.8" />
+              <circle cx="156" cy="106" r="5" fill="#5ca85c" opacity="0.8" />
+
+              <!-- Code lines -->
+              <rect x="120" y="140" width="60" height="6" rx="3" fill="var(--accent)" opacity="0.7" />
+              <rect x="120" y="160" width="40" height="6" rx="3" fill="var(--fg-secondary)" opacity="0.3" />
+              <rect x="140" y="180" width="80" height="6" rx="3" fill="var(--accent)" opacity="0.5" />
+              <rect x="140" y="200" width="100" height="6" rx="3" fill="var(--muted)" opacity="0.4" />
+              <rect x="140" y="220" width="70" height="6" rx="3" fill="var(--accent)" opacity="0.5" />
+              <rect x="140" y="240" width="90" height="6" rx="3" fill="var(--muted)" opacity="0.4" />
+              <rect x="120" y="260" width="30" height="6" rx="3" fill="var(--accent)" opacity="0.7" />
+
+              <!-- Cursor blink -->
+              <rect x="222" y="258" width="2" height="10" rx="1" fill="var(--accent)" class="ill-cursor" />
+
+              <!-- Floating browser window -->
+              <g class="ill-float" style="animation-delay:0s">
+                <rect x="20" y="50" width="80" height="55" rx="6" fill="var(--surface)" stroke="var(--accent-border)" stroke-width="0.5" opacity="0.7" />
+                <rect x="20" y="50" width="80" height="14" rx="6" fill="var(--bg-alt)" opacity="0.5" />
+                <rect x="20" y="58" width="80" height="6" fill="var(--bg-alt)" opacity="0.5" />
+                <circle cx="32" cy="57" r="3" fill="var(--accent)" opacity="0.4" />
+                <rect x="42" y="55" width="20" height="4" rx="2" fill="var(--border)" />
+                <rect x="28" y="72" width="64" height="4" rx="2" fill="var(--border)" opacity="0.5" />
+                <rect x="28" y="82" width="40" height="4" rx="2" fill="var(--border)" opacity="0.3" />
+              </g>
+
+              <!-- Floating terminal window -->
+              <g class="ill-float" style="animation-delay:2s">
+                <rect x="400" y="55" width="75" height="50" rx="6" fill="var(--surface)" stroke="var(--accent-border)" stroke-width="0.5" opacity="0.7" />
+                <rect x="400" y="55" width="75" height="14" rx="6" fill="var(--bg-alt)" opacity="0.5" />
+                <rect x="400" y="63" width="75" height="6" fill="var(--bg-alt)" opacity="0.5" />
+                <circle cx="412" cy="62" r="3" fill="var(--accent)" opacity="0.4" />
+                <rect x="408" y="77" width="55" height="4" rx="2" fill="var(--accent)" opacity="0.3" />
+                <rect x="408" y="87" width="35" height="4" rx="2" fill="var(--accent)" opacity="0.2" />
+                <rect x="408" y="97" width="50" height="4" rx="2" fill="var(--accent)" opacity="0.15" />
+              </g>
+
+              <!-- Floating AI/brain hologram -->
+              <g class="ill-float" style="animation-delay:1s">
+                <rect x="410" y="260" width="70" height="60" rx="8" fill="var(--surface)" stroke="var(--accent-border)" stroke-width="0.5" opacity="0.6" />
+                <circle cx="445" cy="280" r="8" fill="none" stroke="var(--accent)" stroke-width="0.5" opacity="0.5" class="ill-spin" />
+                <circle cx="445" cy="280" r="12" fill="none" stroke="var(--accent)" stroke-width="0.3" opacity="0.3" class="ill-spin" style="animation-direction:reverse" />
+                <circle cx="445" cy="280" r="4" fill="var(--accent)" opacity="0.4" />
+                <rect x="420" y="296" width="50" height="3" rx="1.5" fill="var(--border)" />
+                <rect x="425" y="304" width="30" height="3" rx="1.5" fill="var(--border)" opacity="0.5" />
+                <rect x="430" y="312" width="15" height="3" rx="1.5" fill="var(--accent)" opacity="0.3" />
+              </g>
+
+              <!-- Floating code brackets -->
+              <text x="30" y="200" fill="var(--accent)" opacity="0.2" font-family="monospace" font-size="20" class="ill-float" style="animation-delay:1.5s">&lt;/&gt;</text>
+              <text x="460" y="200" fill="var(--accent)" opacity="0.15" font-family="monospace" font-size="16" class="ill-float" style="animation-delay:0.8s">{ }</text>
+
+              <!-- Tech labels -->
+              <g opacity="0.5">
+                <rect x="170" y="320" width="32" height="18" rx="4" fill="var(--accent-dim)" stroke="var(--accent-border)" stroke-width="0.5" />
+                <text x="178" y="333" fill="var(--accent)" font-size="8" font-family="monospace" font-weight="600">AI</text>
+                <rect x="210" y="320" width="44" height="18" rx="4" fill="var(--accent-dim)" stroke="var(--accent-border)" stroke-width="0.5" />
+                <text x="218" y="333" fill="var(--accent)" font-size="8" font-family="monospace" font-weight="600">WEB</text>
+                <rect x="262" y="320" width="30" height="18" rx="4" fill="var(--accent-dim)" stroke="var(--accent-border)" stroke-width="0.5" />
+                <text x="269" y="333" fill="var(--accent)" font-size="8" font-family="monospace" font-weight="600">JS</text>
+                <rect x="300" y="320" width="40" height="18" rx="4" fill="var(--accent-dim)" stroke="var(--accent-border)" stroke-width="0.5" />
+                <text x="308" y="333" fill="var(--accent)" font-size="8" font-family="monospace" font-weight="600">PY</text>
+              </g>
+            </svg>
           </div>
         </div>
       </div>
@@ -109,24 +210,18 @@
         <div class="section-header">
           <span class="section-label">About</span>
         </div>
-        <h2 class="section-title">A developer learning <br/>by <span class="accent">doing</span></h2>
+        <h2 class="section-title">Building AI Experiences &<br/>Modern <span class="accent">Websites</span></h2>
 
         <div class="about-grid">
           <div class="about-text">
             <p>
-              I'm Sulav, a recent SEE graduate from Nepal. I got into coding 
-              because I wanted to build things — websites, tools, games. 
-              What started with messing around in HTML turned into a full-blown 
-              obsession with making software work.
+              Hi, I'm Sulav. I'm a web developer and AI enthusiast from Nepal who enjoys turning ideas into real digital products.
             </p>
             <p>
-              These days I spend my time building web scrapers, crafting 
-              front-end interfaces, and learning how to write code that doesn't 
-              break (too often). I also make YouTube content about my journey.
+              I build responsive websites, interactive user experiences, and AI-powered applications that solve real problems.
             </p>
             <p>
-              I don't have a CS degree. What I have is curiosity, persistence, 
-              and a habit of breaking things until I understand how they work.
+              My goal isn't just writing code. I enjoy creating products that feel polished, useful, and enjoyable to use. I continuously learn new technologies and love challenging myself with ambitious projects.
             </p>
             <a href="#contact" class="btn btn-sm">Let's talk <span class="arrow">→</span></a>
           </div>
@@ -150,16 +245,64 @@
               <div class="tl-dot"></div>
               <div class="tl-content">
                 <span class="tl-year">2025</span>
-                <span class="tl-text">Completed SEE. Shipped 10+ projects. Started learning full-stack dev.</span>
+                <span class="tl-text">Completed SEE. Shipped 10+ projects. Started full-stack & AI dev.</span>
               </div>
             </div>
             <div class="tl-item">
               <div class="tl-dot"></div>
               <div class="tl-content">
                 <span class="tl-year">Now</span>
-                <span class="tl-text">Building, learning, shipping. Next stop: world-class full-stack developer.</span>
+                <span class="tl-text">Building AI tools, web apps, and shipping products. Next stop: world-class developer.</span>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Services</span>
+        </div>
+        <h2 class="section-title">What I Can <span class="accent">Build</span></h2>
+        <p class="section-desc">From business websites to AI-powered web apps — I build digital products that work.</p>
+
+        <div class="services-grid">
+          <div class="service-card obs">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3 class="service-title">Modern Business Websites</h3>
+            <p class="service-desc">Responsive websites for restaurants, cafes, local businesses, startups, and personal brands.</p>
+          </div>
+          <div class="service-card obs">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3 class="service-title">Landing Pages</h3>
+            <p class="service-desc">High-converting landing pages with modern UI, clear messaging, and fast performance.</p>
+          </div>
+          <div class="service-card obs">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <h3 class="service-title">Portfolio Websites</h3>
+            <p class="service-desc">Professional portfolios for students, developers, freelancers, and creative professionals.</p>
+          </div>
+          <div class="service-card obs">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3 class="service-title">AI Web Applications</h3>
+            <p class="service-desc">Interactive AI-powered web experiences, chatbots, and custom AI integrations.</p>
+          </div>
+          <div class="service-card obs">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+            </div>
+            <h3 class="service-title">Website Redesign</h3>
+            <p class="service-desc">Transform outdated websites into clean, modern, responsive experiences that users love.</p>
           </div>
         </div>
       </div>
@@ -173,7 +316,7 @@
         <h2 class="section-title">Things I <span class="accent">build</span></h2>
 
         <div class="work-grid">
-          <div class="work-card">
+          <div class="work-card obs">
             <div class="work-icon-wrap">
               <img src="assets/webdev.svg" alt="Web Development" class="work-icon-img" />
             </div>
@@ -185,7 +328,7 @@
               <span>JS</span>
             </div>
           </div>
-          <div class="work-card">
+          <div class="work-card obs">
             <div class="work-icon-wrap">
               <img src="assets/scraping.svg" alt="Web Scraping" class="work-icon-img" />
             </div>
@@ -197,7 +340,7 @@
               <span>XPath</span>
             </div>
           </div>
-          <div class="work-card">
+          <div class="work-card obs">
             <div class="work-icon-wrap">
               <img src="assets/pyscript.svg" alt="Python & Automation" class="work-icon-img" />
             </div>
@@ -213,6 +356,55 @@
       </div>
     </section>
 
+    <section id="skills" class="section skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Skills</span>
+        </div>
+        <h2 class="section-title">Technologies I <span class="accent">use</span></h2>
+        <p class="section-desc">The tools and technologies I work with regularly to build digital products.</p>
+
+        <div class="skills-grid">
+          <div class="skill-item obs">
+            <span class="skill-name">HTML</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+          </div>
+          <div class="skill-item obs">
+            <span class="skill-name">CSS</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+          </div>
+          <div class="skill-item obs">
+            <span class="skill-name">JavaScript</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:78%"></div></div>
+          </div>
+          <div class="skill-item obs">
+            <span class="skill-name">Python</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+          </div>
+          <div class="skill-item obs">
+            <span class="skill-name">Git & GitHub</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:82%"></div></div>
+          </div>
+          <div class="skill-item obs">
+            <span class="skill-name">VS Code</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:88%"></div></div>
+          </div>
+          <div class="skill-item obs">
+            <span class="skill-name">Responsive Design</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+          </div>
+          <div class="skill-item obs">
+            <span class="skill-name">REST APIs</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+          </div>
+          <div class="skill-item obs">
+            <span class="skill-name">AI Integration</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <div class="section-divider"></div>
 
     <section id="projects" class="section projects">
@@ -223,7 +415,86 @@
         <h2 class="section-title">Stuff I've <span class="accent">shipped</span></h2>
         <p class="section-desc">Each project taught me something. Here are some that made it to production.</p>
 
+        <div class="featured-project obs" id="featuredProject"></div>
+
         <div class="projects-grid" id="projectsGrid"></div>
+      </div>
+    </section>
+
+    <section id="choose" class="section choose">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Why Me</span>
+        </div>
+        <h2 class="section-title">Why Work <span class="accent">With Me</span>?</h2>
+
+        <div class="choose-grid">
+          <div class="choose-card obs">
+            <div class="choose-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <h3 class="choose-title">Fast Development</h3>
+            <p class="choose-desc">Quick turnaround without sacrificing quality or attention to detail.</p>
+          </div>
+          <div class="choose-card obs">
+            <div class="choose-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+            </div>
+            <h3 class="choose-title">Clean UI/UX</h3>
+            <p class="choose-desc">Thoughtful design that puts user experience first, every time.</p>
+          </div>
+          <div class="choose-card obs">
+            <div class="choose-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3 class="choose-title">Responsive Design</h3>
+            <p class="choose-desc">Every project looks and works great on any device, from mobile to desktop.</p>
+          </div>
+          <div class="choose-card obs">
+            <div class="choose-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 class="choose-title">Performance Optimized</h3>
+            <p class="choose-desc">Fast load times, efficient code, and smooth 60 FPS animations.</p>
+          </div>
+          <div class="choose-card obs">
+            <div class="choose-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3 class="choose-title">Modern Technologies</h3>
+            <p class="choose-desc">Using current best practices and modern web technologies in every project.</p>
+          </div>
+          <div class="choose-card obs">
+            <div class="choose-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <h3 class="choose-title">Attention to Detail</h3>
+            <p class="choose-desc">Every pixel, interaction, and animation is carefully crafted and tested.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="stats" class="section stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item obs">
+            <span class="stat-number" data-target="12">0</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat-item obs">
+            <span class="stat-number" data-target="3">0</span>
+            <span class="stat-label">AI Projects</span>
+          </div>
+          <div class="stat-item obs">
+            <span class="stat-number" data-target="8">0</span>
+            <span class="stat-label">Websites Designed</span>
+          </div>
+          <div class="stat-item obs">
+            <span class="stat-number" data-target="2000">0</span>
+            <span class="stat-label">Hours of Learning</span>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -232,12 +503,12 @@
         <div class="section-header">
           <span class="section-label">Contact</span>
         </div>
-        <h2 class="section-title">Want to <span class="accent">collaborate</span>?</h2>
+        <h2 class="section-title">Have an <span class="accent">idea</span>?</h2>
+        <p class="section-desc">Let's build something amazing together.</p>
 
         <div class="contact-body">
           <p class="contact-desc">
-            I'm always open to new projects, ideas, or just a chat about tech. 
-            No fancy contact forms needed — just send me an email.
+            Whether you need a business website, portfolio, landing page, or custom web project, I'd love to help bring your ideas to life.
           </p>
 
           <div class="contact-links">
