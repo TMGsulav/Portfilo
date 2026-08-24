@@ -116,7 +116,7 @@ if (featuredEl) {
         ${featuredSvg}
       </div>
       <div class="featured-body">
-        <h3 class="featured-title">Liya AI Assistant</h3>
+        <h3 class="featured-title">J.K AI Assistant</h3>
         <p class="featured-desc">A locally running AI assistant designed to provide natural conversations, voice interaction, memory, desktop automation, application launching, and intelligent assistance.</p>
         <div class="featured-features">
           <span class="featured-feature">Voice Interaction</span>
@@ -127,12 +127,10 @@ if (featuredEl) {
           <span class="featured-feature">Fast Local Performance</span>
         </div>
         <div class="project-buttons">
-          <a href="https://github.com/TMGsulav/Liya-Ai" target="_blank" rel="noopener" class="project-btn">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3C5.4.3 0 5.7 0 12.4c0 5.3 3.4 9.8 8.2 11.4.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.8.1-.8.1-.8 1.2.1 1.9 1.3 1.9 1.3 1.1 1.9 2.9 1.4 3.6 1 .1-.8.4-1.4.8-1.7-2.7-.3-5.5-1.3-5.5-6 0-1.3.5-2.4 1.3-3.2-.1-.3-.6-1.6.1-3.3 0 0 1-.3 3.3 1.2 1-.3 2-.4 3-.4s2 .1 3 .4c2.3-1.6 3.3-1.2 3.3-1.2.7 1.7.2 3 .1 3.3.8.9 1.3 2 1.3 3.2 0 4.7-2.8 5.7-5.5 6 .4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6C20.6 22.2 24 17.7 24 12.4 24 5.7 18.6.3 12 .3z"/></svg>
-            View on GitHub
-          </a>
-        </div>
-      </div>
+          
+          <a href="#" target="_blank" rel="noopener" class="project-btn"> Under_development
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3C5.4.3 0 5.7 0 12。4c0 5。3 3。4 9。8 8。2 11。4。6。1。8-.3。8-.6v-2。１c-3。３。7-4-１。6-4-１。6-.6-１。４-１。４-１。８-１。４-１。８-１。１-.８。１-.８。１-.８ １。２。１ １。９ １。３ １。９ １。３ １。１ １。９ ２。９ １。４ ３。６ １ 。１-.８。４-１。４。８-１。７-２。７-.３-５。５-₁．₃-5．5−6
+
     </div>`;
 }
 
